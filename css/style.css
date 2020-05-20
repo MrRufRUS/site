@@ -1,0 +1,167 @@
+body{
+    margin: 0 0;
+    padding: 0 0;
+}
+
+ul{
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+    color:  #000;
+}
+
+
+/* HEADER */
+
+.header{
+    background: #000000 url("/../img/header.png") no-repeat center top / cover;
+    padding-top: 0;
+    height: 810px;
+}
+
+.nav__list{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    align-content: center;
+    flex-wrap: wrap;
+    direction: column;
+    padding-right: 115px;
+}
+
+
+.logo{
+    margin-top: 40px;
+    flex-grow: 1;
+    position: relative;
+    padding-left: 115px;
+
+}
+.nav__element{
+    font-family: 'Open Sans', sans-serif;
+    margin-left:1vw;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+
+.navbar{
+    background: white;
+    position: sticky;
+    display: flex;
+    height: 115px;
+    align-content: center;
+    max-width: 100%;
+}
+
+#wrapper1{
+    display: flex;
+    padding-top: 180px;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+@media all and (max-width: 768px) {
+  .nav__list > li {
+    flex-basis: 100%;
+  }
+  .header{
+      height: auto;
+  }
+  .navbar{
+      height: auto;
+      width: 100vw;
+  }
+  .logo {
+    flex-grow: 0;
+  }
+}
+
+.header__text{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    font-size: 60px;
+    color: white;
+    text-align: center;
+    margin: 0;
+}
+
+.header__text1{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    font-size: 22px;
+    color: white;
+    text-align: center;
+}
+
+.buttons{
+    display: flex;
+    justify-content: center;
+    padding-top: 115px;
+    
+}
+
+.header__button{
+    border: 2px solid white;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    color: white;
+    margin: 13px;
+    padding-top: 25px;
+    height: 50px;
+    width: 220px;
+    text-align: center;
+    transition: all 100ms;
+}
+
+.header__button:hover{
+    background-color: #00897b;
+    border: 2px solid #00897b;
+}
+
+.angle{
+    color: white;
+    text-align: center;
+    padding-top: 100px;
+}
+
+
+/* SECTION1 */
+
+.section1{
+    height: 675px;
+}
+
+#wrapper1{
+    padding-top: 115px;
+}
+
+.big__text{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    font-size: 30px;
+    text-align: center;
+    margin: 0;
+}
+
+.medium__text{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    text-align: center;
+    margin: 0;
+}
+
+#about__us{
+    padding-top: 125px;
+}
+
+.under__text{
+    padding-top: 35px;
+    max-width: 630px;
+    margin: 0 auto;
+}
