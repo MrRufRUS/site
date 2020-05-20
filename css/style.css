@@ -12,6 +12,9 @@ a{
     color:  #000;
 }
 
+*{
+    box-sizing: border-box;
+}
 
 /* HEADER */
 
@@ -56,9 +59,9 @@ a{
     max-width: 100%;
 }
 
-#wrapper1{
+#intro{
     display: flex;
-    padding-top: 180px;
+    padding-top: 65px;
     justify-content: center;
     flex-direction: column;
 }
@@ -78,9 +81,16 @@ a{
   .logo {
     flex-grow: 0;
   }
+
+  #container{
+      flex-direction: column;
+  }
+  .section1{
+      height: auto;
+  }
 }
 
-.header__text{
+.title{
     font-family: 'Open Sans', sans-serif;
     font-weight: 600;
     font-size: 60px;
@@ -89,7 +99,7 @@ a{
     margin: 0;
 }
 
-.header__text1{
+.header__subtitle{
     font-family: 'Open Sans', sans-serif;
     font-weight: 600;
     font-size: 22px;
@@ -105,22 +115,23 @@ a{
 }
 
 .header__button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     border: 2px solid white;
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
     font-size: 20px;
     color: white;
     margin: 13px;
-    padding-top: 25px;
-    height: 50px;
+    height: 70px;
     width: 220px;
-    text-align: center;
     transition: all 100ms;
 }
 
 .header__button:hover{
-    background-color: #00897b;
     border: 2px solid #00897b;
+    background-color: #00897b;
 }
 
 .angle{
@@ -128,7 +139,6 @@ a{
     text-align: center;
     padding-top: 100px;
 }
-
 
 /* SECTION1 */
 
@@ -148,11 +158,17 @@ a{
     margin: 0;
 }
 
-.medium__text{
+.small__text{
     font-family: 'Open Sans', sans-serif;
     font-weight: 500;
     font-size: 15px;
-    text-align: center;
+    margin: 0;
+}
+
+.medium__text{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    font-size: 20px;
     margin: 0;
 }
 
@@ -164,4 +180,32 @@ a{
     padding-top: 35px;
     max-width: 630px;
     margin: 0 auto;
+    text-align: center;
+}
+
+.img__about{
+    padding-bottom: 40px;
+}
+
+#container{
+    padding-top: 125px;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 0;
+    width: auto;
+    padding: 115px 0;
+}
+
+.child{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 200px;
+    height: 200px;
+    padding: 0 140px;
+    flex-grow: 1;
+    text-align: center;
 }
